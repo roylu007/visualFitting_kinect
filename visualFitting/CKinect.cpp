@@ -1002,7 +1002,7 @@ void CKinect::transComputing(Mat& m_user){
 	imshow("m_model2", m_model2);
 	mod.getFpt();
 	Mat imgL = mod.modelSrc.clone();
-	int ress = CGALTri::getmain(imgL, mod.fpt->featurePt,"ModTriImage");
+	int ress = CGALTri::getmain(40,imgL, mod.fpt->featurePt,"ModTriImage");
 
 	
 	//Mat m_garment2(m_garment.size(),m_garment.type(),Scalar(255));

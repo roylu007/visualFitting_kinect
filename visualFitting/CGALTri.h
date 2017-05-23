@@ -28,7 +28,7 @@
 
 using namespace std;
 using namespace cv;
-#define MINLEN 40
+//#define MINLEN 40
 
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
 typedef CGAL::Triangulation_vertex_base_2<K> Vb;
@@ -76,6 +76,7 @@ public:
 		line(img, sp1, sp2, color);
 		//DrawEdge(img, vh1, vh2, color);
 	}
+
 	static void DrawEdge(Mat& img, Vertex_handle v1, Vertex_handle v2, cv::Scalar color){
 
 	}
@@ -107,7 +108,7 @@ public:
 		}
 	}
 
-	static int getmain(cv::Mat img, vector<cv::Point>pts,char* imgname)
+	static int getmain(int MINLEN, cv::Mat img, vector<cv::Point>pts, char* imgname)
 	{
 		
 		Mat imgL = img.clone();
@@ -167,6 +168,7 @@ public:
 		//system("pause");
 		return 0;
 	}
+
 };
 
 

@@ -8,7 +8,7 @@
 
 int main()
 {
-	printf_s("start analysis Kinect for Windows V2 body data....");
+	printf_s("start analysis Kinect for Windows V2 body data....\n");
 	Garment gar;
 	gar.garmentInitial();
 	Model mod;

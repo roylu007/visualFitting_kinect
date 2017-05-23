@@ -15,7 +15,11 @@ public:
 	~Garment();
 	Mat m_garment;
 	Point featureVector;
+	vector<Point>garmentPoints;
 	void garmentInitial();
+	void getContourPoint();
+	vector<Point>  getGarmentContoursPoint(vector<vector<Point>> &contours);
+	void getCircle200(Mat srcBw, vector<Point> &contours);
 private:
 
 };
